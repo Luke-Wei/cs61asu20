@@ -13,9 +13,9 @@ def a_plus_abs_b(a, b):
     ['return h(a, b)']
     """
     if b >= 0:
-        h = _____
+        h = a + b
     else:
-        h = _____
+        h = a - b
     return h(a, b)
 
 
