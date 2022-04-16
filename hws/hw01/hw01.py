@@ -37,7 +37,7 @@ def two_of_three(x, y, z):
     >>> [type(x).__name__ for x in ast.parse(inspect.getsource(two_of_three)).body[0].body]
     ['Expr', 'Return']
     """
-    return a * a + b * b + c * c - pow(max(a, b, c), 2)
+    return x * x + y * y + z * z - pow(max(x, y, z), 2)
 
 
 
@@ -53,11 +53,11 @@ def largest_factor(x):
     """
     "*** YOUR CODE HERE ***"
     i = 2
-    while i <= n ** 0.5:
-        if n % i:
+    while i <= x ** 0.5:
+        if x % i:
             i += 1
         else:
-            return int(n / i)    
+            return int(x / i)    
     return 1
 
 
@@ -110,12 +110,16 @@ def with_if_function():
 
 def cond():
     "*** YOUR CODE HERE ***"
+    return False
+
 
 def true_func():
     "*** YOUR CODE HERE ***"
+    print(42)
 
 def false_func():
     "*** YOUR CODE HERE ***"
+    print(47)
 
 
 
