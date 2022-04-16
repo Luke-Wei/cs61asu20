@@ -147,4 +147,20 @@ def hailstone(x):
     7
     """
     "*** YOUR CODE HERE ***"
+    count = 0
+    while x > 1:
+        print(int(x))
+        count +=1
+        if x % 2 :
+            x = x * 3 + 1
+        else:
+            x /= 2
+    print(int(x))
+    count += 1
+    return count
+
+
+
+
+
 
