@@ -9,6 +9,8 @@
 # import sys
 # assert ('linux' in sys.platform), "该代码只能在 Linux 下执行"
 
+from operator import mul
+from functools import reduce
 
 def falling(n, k):
     """Compute the falling factorial of n to depth k.
@@ -22,7 +24,9 @@ def falling(n, k):
     >>> falling(4, 0)
     1
     """
-    "*** YOUR CODE HERE ***"
+    if k == 0:
+        return 1
+    return reduce(mul, range(n, n-k, -1))
 
 
 
