@@ -43,7 +43,11 @@ def sum_digits(y):
     >>> a
     6
     """
-    "*** YOUR CODE HERE ***"
+    ans = 0
+    while y:
+        ans += y % 10
+        y //= 10
+    return ans
 
 
 
